@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.springboot.data.dao.ProjectInfoMapper">
+   <resultMap id="BaseResultMap" type="com.springboot.domain.entity.ProjectInfo" >
+        <result column="id" property="id" jdbcType="INTEGER" />
+        <result column="project_code" property="projectCode" jdbcType="VARCHAR" />
+        <result column="project_name" property="projectName" jdbcType="VARCHAR" />
+        <result column="business_director" property="businessDirector" jdbcType="VARCHAR" />
+        <result column="product_manager" property="productManager" jdbcType="VARCHAR" />
+        <result column="test_supervisor" property="testSupervisor" jdbcType="VARCHAR" />
+        <result column="basic_power_participants" property="basicPowerParticipants" jdbcType="VARCHAR" />
+        <result column="project_start_time" property="projectStartTime" jdbcType="BIGINT" />
+        <result column="project_end_time" property="projectEndTime" jdbcType="BIGINT" />
+        <result column="demand_side" property="demandSide" jdbcType="VARCHAR" />
+        <result column="business_conditions" property="businessConditions" jdbcType="VARCHAR" />
+        <result column="current_stage" property="currentStage" jdbcType="VARCHAR" />
+        <result column="acceptance_time" property="acceptanceTime" jdbcType="BIGINT" />
+        <result column="project_budget" property="projectBudget" jdbcType="VARCHAR" />
+        <result column="budget_source" property="budgetSource" jdbcType="VARCHAR" />
+        <result column="project_introduction" property="projectIntroduction" jdbcType="VARCHAR" />
+        <result column="terminal" property="terminal" jdbcType="VARCHAR" />
+        <result column="access_address" property="accessAddress" jdbcType="VARCHAR" />
+        <result column="main_page" property="mainPage" jdbcType="VARCHAR" />
+        <result column="test_account" property="testAccount" jdbcType="VARCHAR" />
+        <result column="test_password" property="testPassword" jdbcType="VARCHAR" />
+       <result column="server_info" property="serverInfo" jdbcType="VARCHAR" />
+       <result column="address_info" property="addressInfo" jdbcType="VARCHAR" />
+       <result column="svn_path_info" property="svnPathInfo" jdbcType="VARCHAR" />
+       <result column="third_party_services" property="thirdPartyServices" jdbcType="VARCHAR" />
+       <result column="subprojects" property="subprojects" jdbcType="VARCHAR" />
+       <result column="project_add_time" property="projectAddTime" jdbcType="BIGINT" />
+       <result column="update_time" property="updateTime" jdbcType="VARCHAR" />
+       <result column="technical_documents" property="technicalDocuments" jdbcType="VARCHAR" />
+       <result column="interface_documents" property="interfaceDocuments" jdbcType="VARCHAR" />
+       <result column="white_paper" property="whitePaper" jdbcType="VARCHAR" />
+       <result column="request_documents" property="requestDocuments" jdbcType="VARCHAR" />
+       <result column="data_source_info" property="dataSourceInfo" jdbcType="VARCHAR" />
+       <result column="remarks" property="remarks" jdbcType="VARCHAR" />
+       <result column="gmt_create" property="gmtCreate" jdbcType="BIGINT" />
+       <result column="gmt_modified" property="gmtModified" jdbcType="BIGINT" />
+       <result column="is_del" property="isDel" jdbcType="VARCHAR" />
+    </resultMap>
+    <sql id="Base_Column_List" >
+        id,project_code,project_name,business_director,product_manager,test_supervisor,basic_power_participants,project_start_time,project_end_time,demand_side,business_conditions,current_stage,acceptance_time,project_budget,budget_source,project_introduction,terminal,main_page,test_account,test_password,server_infosvn_path_info,third_party_services,subprojects,project_add_time,update_time,technical_documents,interface_documents,white_paper,data_source_info,remarks,gmt_create,gmt_modified,is_del
+    </sql>
+    <insert id="insertProject" parameterType="com.springboot.domain.entity.ProjectInfo">
+      insert into project_info
+      (id,
+      project_code,
+        project_name,
+        business_director,
+        product_manager,
+        test_supervisor,
+        basic_power_participants,
+        project_start_time,
+        project_end_time,
+        demand_side,
+        business_conditions,
+        current_stage,
+        acceptance_time,
+        project_budget,
+        budget_source,
+        project_introduction,
+        terminal,
+        access_address,
+        main_page,
+        test_account,
+        test_password,
+       server_info,
+       address_info,
+       svn_path_info,
+       third_party_services,
+       subprojects,
+       project_add_time,
+       update_time,
+       technical_documents,
+       interface_documents,
+       white_paper,
+       request_documents,
+       data_source_info,
+       remarks,
+       gmt_create,
+       gmt_modified,
+       is_del
+      )
+       values
+      (
+        #{id},
+        #{projectCode},
+        #{projectName},
+		#{businessDirector},
+		#{productManager},
+        #{testSupervisor},
+        #{basicPowerParticipants},
+        #{projectStartTime},
+        #{projectEndTime},
+        #{demandSide},
+        #{businessConditions},
+        #{currentStage},
+        #{acceptanceTime},
+        #{projectBudget},
+        #{budgetSource},
+        #{projectIntroduction},
+        #{terminal},
+        #{accessAddress},
+		#{mainPage},
+        #{testAccount},
+        #{testPassword},
+		#{serverInfo},
+		#{addressInfo},
+		#{svnPathInfo},
+		#{thirdPartyServices},
+		#{subprojects},
+		#{projectAddTime},
+		#{updateTime},
+		#{technicalDocuments},
+		#{interfaceDocuments},
+		#{whitePaper},
+		#{requestDocuments},
+		#{dataSourceInfo},
+		#{remarks},
+		#{gmtCreate},
+		#{gmtModified},
+		#{isDel}
+      )
+    </insert>
+
+</mapper>
