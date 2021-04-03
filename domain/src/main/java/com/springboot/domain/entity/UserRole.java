@@ -6,8 +6,7 @@ package com.springboot.domain.entity;
  * @Date 2018/11/20
  * @Description
  */
-public class UserRole
-{
+public class UserRole {
     private int id;
     private String name;
 

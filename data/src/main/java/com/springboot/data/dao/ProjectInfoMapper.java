@@ -9,8 +9,7 @@ import org.springframework.stereotype.Repository;
  * @Description
  */
 @Repository
-public interface ProjectInfoMapper
-{
+public interface ProjectInfoMapper {
     // 插入
     int insertProject(ProjectInfo projectInfo);
 }

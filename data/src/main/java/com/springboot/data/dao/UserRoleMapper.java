@@ -11,10 +11,10 @@ import java.util.List;
  * @Description
  */
 @Repository
-public interface UserRoleMapper
-{
+public interface UserRoleMapper {
     /**
      * 查询所有的用户角色
+     *
      * @return
      */
     List<UserRole> all();

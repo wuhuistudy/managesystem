@@ -8,11 +8,9 @@ import org.springframework.context.annotation.Import;
 
 @SpringBootApplication
 @Import({CoreConfiguration.class, DataConfiguration.class})
-public class ApiApplication
-{
+public class ApiApplication {
 
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         SpringApplication.run(ApiApplication.class, args);
     }
 }

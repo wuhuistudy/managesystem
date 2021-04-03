@@ -16,8 +16,7 @@ import java.util.List;
  * @Description
  */
 @RestController
-public class HelloController
-{
+public class HelloController {
     @Autowired
     private HelloService helloService;
     /**

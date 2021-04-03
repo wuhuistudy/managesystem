@@ -12,13 +12,12 @@ import org.springframework.stereotype.Service;
  * @Description
  */
 @Service
-public class ProjectInfoServiceImpl implements ProjectInfoService
-{
+public class ProjectInfoServiceImpl implements ProjectInfoService {
     @Autowired
     private ProjectInfoMapper projectInfoMapper;
+
     @Override
-    public int insertProject(ProjectInfo projectInfo)
-    {
+    public int insertProject(ProjectInfo projectInfo) {
         return projectInfoMapper.insertProject(projectInfo);
     }
 }

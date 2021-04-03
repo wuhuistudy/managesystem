@@ -15,19 +15,18 @@ import java.util.Date;
  * @Description
  */
 @RestController
-public class ProjectInfoController
-{
+public class ProjectInfoController {
     @Autowired
     private ProjectInfoService projectInfoService;
+
     @GetMapping("/insert")
-    public Return insertProject()
-    {
+    public Return insertProject() {
         ProjectInfo projectInfo = new ProjectInfo();
         projectInfo.setAccessAddress("1111");
         projectInfo.setAcceptanceTime(new Date(System.currentTimeMillis()));
         projectInfo.setProjectCode("99999999999999");
         projectInfo.setBudgetSource(989922222222d);
-        int data =projectInfoService.insertProject(projectInfo);
-        return new Return("0000",null,data);
+        int data = projectInfoService.insertProject(projectInfo);
+        return new Return("0000", null, data);
     }
 }

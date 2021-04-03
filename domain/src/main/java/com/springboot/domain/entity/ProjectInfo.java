@@ -10,8 +10,7 @@ import java.util.Date;
  * @Description
  */
 @Data
-public class ProjectInfo
-{
+public class ProjectInfo {
     // id
     private Integer id;
     //项目编号

@@ -19,20 +19,21 @@ import javax.sql.DataSource;
 @Configuration
 @ConfigurationProperties
 @EnableTransactionManagement
-public class DbConfig
-{
+public class DbConfig {
     @Bean
     @ConfigurationProperties("spring.datasource")
-    public DataSource dataSource(){
+    public DataSource dataSource() {
         DruidDataSource dataSource = new DruidDataSource();
         return dataSource;
     }
+
     @Bean
-    public JdbcTemplate jdbcTemplate(){
+    public JdbcTemplate jdbcTemplate() {
         return new JdbcTemplate(dataSource());
     }
+
     @Bean
-    public PlatformTransactionManager transactionManager(){
+    public PlatformTransactionManager transactionManager() {
         DataSourceTransactionManager dataSourceTransactionManager = new DataSourceTransactionManager(dataSource());
         return dataSourceTransactionManager;
     }

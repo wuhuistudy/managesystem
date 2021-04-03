@@ -5,6 +5,5 @@ package com.springboot.api.controller;
  * @Date 2018/11/21
  * @Description
  */
-public class InterfaceInfoController
-{
+public class InterfaceInfoController {
 }

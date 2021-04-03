@@ -10,6 +10,5 @@ import org.springframework.context.annotation.Configuration;
  */
 @ComponentScan
 @Configuration
-public class CoreConfiguration
-{
+public class CoreConfiguration {
 }

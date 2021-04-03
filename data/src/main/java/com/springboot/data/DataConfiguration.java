@@ -12,6 +12,5 @@ import org.springframework.context.annotation.Configuration;
 @ComponentScan
 @Configuration
 @MapperScan("com.springboot.data.dao")
-public class DataConfiguration
-{
+public class DataConfiguration {
 }

@@ -14,14 +14,12 @@ import java.util.List;
  * @since SDP V300R003C10
  */
 @Service
-public class HelloServiceImpl implements HelloService
-{
+public class HelloServiceImpl implements HelloService {
     @Autowired
     private UserRoleMapper userRoleMapper;
 
     @Override
-    public List<UserRole> sayHello()
-    {
+    public List<UserRole> sayHello() {
         List<UserRole> data = userRoleMapper.all();
         return data;
     }

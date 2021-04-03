@@ -6,8 +6,7 @@ package com.springboot.domain.entity;
  * @Date 2018/11/20
  * @Description
  */
-public abstract class BaseEntity
-{
+public abstract class BaseEntity {
     private long createdAt;
 
     private String createdBy;

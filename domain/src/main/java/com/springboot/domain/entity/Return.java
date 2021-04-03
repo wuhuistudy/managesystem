@@ -7,8 +7,7 @@ import java.io.Serializable;
  * @Date 2018/11/21
  * @Description
  */
-public class Return implements Serializable
-{
+public class Return implements Serializable {
     private static final long serialVersionUID = -5158708077742187883L;
     /* 状态码 */
     private String code;
@@ -17,7 +16,8 @@ public class Return implements Serializable
     /* 数据量 */
     private Integer count;
 
-    public Return() {}
+    public Return() {
+    }
 
     public Return(String code, Object data) {
         super();
